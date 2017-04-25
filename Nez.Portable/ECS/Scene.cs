@@ -301,7 +301,8 @@ namespace Nez
 		{
 			entities = new EntityList( this );
 			renderableComponents = new RenderableComponentList();
-			content = new NezContentManager();
+            // NOTE(WH): commented out temporarily to be able to run the editor without Core instance.
+			//content = new NezContentManager();
 
 			var cameraEntity = createEntity( "camera" );
 			camera = cameraEntity.addComponent( new Camera() );
